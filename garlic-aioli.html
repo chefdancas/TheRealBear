@@ -1,38 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Garlic Aioli Recipe</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Garlic Aioli | The Real Bear</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="bg-gray-50 text-gray-900">
   <nav class="bg-white shadow-md sticky top-0 z-50">
-    <div class="hidden md:flex space-x-8">
-      <a href="index.html">Home</a>
-      <a href="recipes.html">Recipes</a>
+    <div class="container mx-auto flex justify-between items-center py-4 px-4">
+      <a href="index.html" class="text-xl font-bold">The Real Bear</a>
+      <div class="hidden md:flex space-x-6">
+        <a class="hover:text-amber-600" href="index.html">Home</a>
+        <a class="hover:text-amber-600" href="mystory.html">My Story</a>
+        <a class="hover:text-amber-600" href="reviews.html">Reviews</a>
+        <a class="hover:text-amber-600" href="recipes.html">Recipes</a>
+        <a class="hover:text-amber-600" href="contact.html">Contact</a>
+      </div>
     </div>
   </nav>
 
-  <div class="container">
-    <h1>Garlic Aioli</h1>
-    <h2>Ingredients</h2>
-    <ul>
-      <li>2 egg yolks</li>
-      <li>3 cloves garlic, minced</li>
-      <li>1 tsp Dijon mustard</li>
-      <li>1 cup olive oil</li>
-      <li>1 tbsp lemon juice</li>
-      <li>Salt to taste</li>
-    </ul>
+  <header class="container mx-auto px-4 pt-8">
+    <img src="images/garlic-aioli.jpg" alt="Garlic aioli" class="w-full max-h-[420px] object-cover rounded-xl shadow" />
+    <h1 class="text-3xl font-extrabold mt-6">Garlic Aioli</h1>
+    <p class="mt-2 text-gray-600">Classic emulsion—silky, punchy, perfect with fries or grilled veg.</p>
+  </header>
 
-    <h2>Instructions</h2>
-    <ol>
-      <li>Whisk egg yolks, garlic, and mustard until smooth.</li>
-      <li>Slowly drizzle in olive oil while whisking to emulsify.</li>
-      <li>Add lemon juice and salt. Mix until creamy.</li>
-      <li>Chill and serve as a dip or spread.</li>
-    </ol>
-  </div>
+  <section class="container mx-auto px-4 mt-8">
+    <div class="bg-white rounded-xl shadow p-6">
+      <h2 class="text-xl font-bold mb-2">Story</h2>
+      <p class="leading-relaxed">Tell the story behind your aioli here (service hacks, menu context, your technique philosophy, etc.).</p>
+    </div>
+  </section>
+
+  <main class="container mx-auto px-4 my-8 grid md:grid-cols-3 gap-8">
+    <aside class="md:col-span-1">
+      <div class="bg-white rounded-xl shadow p-6">
+        <h3 class="font-bold mb-3">Ingredients</h3>
+        <ul class="list-disc list-inside space-y-1 text-gray-800">
+          <li>2 egg yolks</li>
+          <li>3 cloves garlic, finely grated</li>
+          <li>1 tsp Dijon mustard</li>
+          <li>1 cup neutral oil or olive oil (or split)</li>
+          <li>1–2 Tbsp lemon juice</li>
+          <li>Kosher salt</li>
+        </ul>
+      </div>
+    </aside>
+
+    <section class="md:col-span-2">
+      <div class="bg-white rounded-xl shadow p-6">
+        <h3 class="font-bold mb-3">Method</h3>
+        <ol class="list-decimal list-inside space-y-3 text-gray-800">
+          <li>Whisk yolks, garlic, and Dijon until smooth.</li>
+          <li>Very slowly stream in oil while whisking to emulsify.</li>
+          <li>Balance with lemon and salt. Thin with a few drops of water if needed.</li>
+        </ol>
+        <div class="mt-8">
+          <a href="recipes.html" class="inline-block px-4 py-2 rounded-lg bg-gray-900 text-white hover:bg-amber-600 transition">← Back to Recipes</a>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
